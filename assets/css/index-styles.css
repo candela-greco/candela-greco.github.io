@@ -1,66 +1,69 @@
 /* NAVEGADOR */
 
 nav {
-    background-color: #f3c9cb;
-  }
-  .navegador {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .lista {
-    list-style: none;
-    color: black;
-    font-size: 15px;
-  }
-  
-  /* HEADER */
-  
-  #Hero-Section {
-    background-image: url("../imgs/fondo-cabecera.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    display: block;
-  }
-  .foto-perfil{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-  }
-  .contenedor {
-    text-align: center;
-    background-color: black;
-    opacity: 70%;
-    color: white;
-  }
-  
-  /* CONOCIMIENTOS */
-  
-  .conocimientos {
-    display: flex;
-    text-align: center;
-    background: #f3c9cb;
-    opacity: 70%;
-    color: black;
-  }
-  .texto {
-    padding: 3rem;
-  }
-
-  /* PORTFOLIO */
-
-  .titulo-carousel {
-    text-align: center;
-  }
-  .carousel-item img {
-    height: 500px;
-    object-fit: cover ;
-    object-position: top;
+  background-color: #f3c9cb;
 }
-  .carousel-caption {
-    background-color: black;
-    opacity: 60%;
-  }
-  
+.navegador {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lista {
+  list-style: none;
+  color: black;
+  font-size: 15px;
+}
+
+/* HEADER */
+
+#Hero-Section {
+  background-image: url('../imgs/fondo-cabecera.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  display: block;
+}
+.foto-perfil {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.contenedor {
+  text-align: center;
+  background-color: black;
+  opacity: 70%;
+  color: white;
+}
+
+/* CONOCIMIENTOS */
+
+.conocimientos {
+  display: flex;
+  text-align: center;
+  background: #f3c9cb;
+  opacity: 70%;
+  color: black;
+}
+.texto {
+  padding: 3rem;
+}
+
+/* PORTFOLIO */
+
+.titulo-carousel {
+  text-align: center;
+}
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+.carousel-caption {
+  background-color: black;
+  opacity: 60%;
+}
+
+a {
+  text-decoration: none;
+}
