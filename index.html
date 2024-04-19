@@ -36,8 +36,11 @@
               Menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Conocimiento</a></li>
+              <li><a class="dropdown-item" href="#">Inicio</a></li>
+              <li><a class="dropdown-item" href="#">Acerca de mí</a></li>
+              <li><a class="dropdown-item" href="#">Skills</a></li>
               <li><a class="dropdown-item" href="#">Portfolio</a></li>
+              <li><a class="dropdown-item" href="#contact-section">Contacto</a></li>
             </ul>
           </li>
         </ul>
@@ -46,26 +49,23 @@
     <header id="Hero-Section" class="text-light text-end py-1">
       <div class="container">
         <div class="ms-auto col-12 col-md-7">
-          <div class="display-1 fw-bold my-5">
+          <div class="card card d-flex flex-column align-items-end border-0" style="background-color: transparent;">
             <img
-              class="foto-perfil"
+              class="card-img-top"
               src="assets/imgs/candela.jpg"
               alt="Una foto mia" />
+            <div class="card-body d-flex justify-content-end">
+              <p class="contenedor">Mi nombre es Candela, tengo 26 años y desde muy joven siento mucha
+                curiosidad por la tecnología. Siempre fui de las personas que al
+                tener un problema relacionado a lo tecnológico, buscaba respuestas
+                hasta solucionarlo. Pero no fue hasta conocer desarrolladores que
+                me di cuenta lo mucho que me apasionaba. Fue entonces cuando
+                decidí que era algo que quería convertir en mi carrera a tiempo
+                completo. Ahora estoy enfocada en encontrar un puesto en el área
+                de IT donde pueda seguir creciendo y contribuyendo de manera
+                significativa.</p>
+            </div>
           </div>
-          <div class="contenedor">
-            <p class="my-5 fs-4">
-              Mi nombre es Candela, tengo 26 años y desde muy joven siento mucha
-              curiosidad por la tecnología. Siempre fui de las personas que al
-              tener un problema relacionado a lo tecnológico, buscaba respuestas
-              hasta solucionarlo. Pero no fue hasta conocer desarrolladores que
-              me di cuenta lo mucho que me apasionaba. Fue entonces cuando
-              decidí que era algo que quería convertir en mi carrera a tiempo
-              completo. Ahora estoy enfocada en encontrar un puesto en el área
-              de IT donde pueda seguir creciendo y contribuyendo de manera
-              significativa.
-            </p>
-          </div>
-
           <div class="mb-5 pb-5">
             <button
               onclick="window.location.href='#proyectos'"
@@ -73,7 +73,7 @@
               Proyectos
             </button>
             <button
-              onclick="window.location.href='#contacto'"
+              onclick="window.location.href='#contact-section'"
               class="btn btn-lg btn-outline-info text-dark me-4">
               Contacto
             </button>
@@ -82,8 +82,8 @@
       </div>
     </header>
     <section class="conocimientos">
-      <div class="texto">
-        <i class="fa-brands fa-html5 fa-3x my-3"></i>
+      <div class="texto border border-primary rounded-3 m-3">
+        <i class="fa-brands fa-html5 fa-3x my-3 text-danger"></i>
         <h3 class="my-3 fw-bold">HTML</h3>
         <p class="my-3">
           Tengo un sólido dominio del lenguaje HTML para la creación de
@@ -96,8 +96,8 @@
           atractivos.
         </p>
       </div>
-      <div class="texto">
-        <i class="fa-regular fa-file-code fa-3x my-3"></i>
+      <div class="texto border border-primary rounded-3 m-3">
+        <i class="fa-regular fa-file-code fa-3x my-3 text-primary"></i>
         <h3 class="my-3 fw-bold">Css</h3>
         <p class="my-3">
           Tengo experiencia sólida en el uso de CSS para el diseño y la
@@ -111,8 +111,8 @@
           modernas y responsivas de forma ágil.
         </p>
       </div>
-      <div class="texto">
-        <i class="fa-solid fa-c fa-3x my-3"></i>
+      <div class="texto border border-primary rounded-3 m-3">
+        <i class="fa-solid fa-c fa-3x my-3 text-primary-emphasis"></i>
         <h3 class="my-3 fw-bold">C++</h3>
         <p class="my-3">
           Tengo un amplio dominio del lenguaje de programación C++. Estoy
@@ -167,6 +167,23 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+    </section>
+    <section id="contact-section" class="d-flex flex-column align-items-center">
+      <h2>Contacto</h2>
+      <div class="d-flex row gap-3">
+        <a href="http://google.com" class="d-flex flex-column col align-items-center" target="_blank">
+          <i class="fab fa-linkedin display-1"></i>
+          <p>LinkedIn</p>
+        </a>
+        <a href="http://google.com" class="d-flex flex-column col align-items-center" target="_blank">
+          <i class="fab fa-github-square display-1"></i>
+          <p>GitHub</p>
+        </a>
+        <a href="http://google.com" class="d-flex flex-column col align-items-center" target="_blank">
+          <i class="fab fa-whatsapp-square display-1"></i>
+          <p>WhatsApp</p>
+        </a>
       </div>
     </section>
   </body>
