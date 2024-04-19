@@ -48,3 +48,16 @@ nav {
   .texto {
     padding: 3rem;
   }
+
+  /* PORTFOLIO */
+
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover ;
+    object-position: top;
+}
+  .carousel-caption {
+    background-color: black;
+    opacity: 60%;
+  }
+  
