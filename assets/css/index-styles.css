@@ -39,14 +39,20 @@ nav {
   /* CONOCIMIENTOS */
   
   .conocimientos {
-    display: flex;
-    text-align: center;
     background: #f3c9cb;
     opacity: 70%;
     color: black;
+    align-items: center;
   }
   .texto {
-    padding: 3rem;
+    padding: 1rem;
+    width: 45%;
+    text-align: center;
+  }
+  @media only screen and (min-width: 768px) {
+    .texto {
+      width: 50%;
+    }
   }
 
   /* PORTFOLIO */
