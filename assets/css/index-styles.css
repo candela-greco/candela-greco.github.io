@@ -38,7 +38,7 @@ nav {
   
   /* CONOCIMIENTOS */
   
-  .conocimientos {
+  #conocimientos {
     background: #f3c9cb;
     opacity: 70%;
     color: black;
@@ -56,9 +56,9 @@ nav {
 
   /* PORTFOLIO */
 
-  .portfolio {
+  #portfolio {
     background-color: #000000;
-    color: white;
+    color: #f3c9cb;
   }
   .titulo-carousel {
     text-align: center;
@@ -68,7 +68,7 @@ nav {
   .linea-decorativa {
     width: 100px;
     height: 2px;
-    background-color: white;
+    background-color: #f3c9cb;
     margin: 30px 120px 60px;
     opacity: 60%;
   }
@@ -85,5 +85,72 @@ nav {
   .carousel-caption {
     background-color: black;
     opacity: 60%;
+  }
+  
+  /* CONTACTO */
+
+  #contacto {
+    background-color: #000000;
+    color: #f3c9cb;
+    padding: 3rem;
+  }
+  
+  /* FOOTER */
+
+  .mi-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-contenido {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    height: auto;
+    padding: 2rem;
+  }
+  
+  .footer-enlaces ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-enlaces ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-enlaces ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-redes a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .footer-redes a:hover {
+    color: #ffd700;
+  }
+  
+  .footer-derechos {
+    text-align: center;
+    margin-top: 20px;
   }
   

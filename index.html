@@ -36,8 +36,9 @@
               Menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Conocimiento</a></li>
-              <li><a class="dropdown-item" href="#">Portfolio</a></li>
+              <li><a class="dropdown-item" href="#conocimientos">Conocimiento</a></li>
+              <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+              <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
             </ul>
           </li>
         </ul>
@@ -68,9 +69,9 @@
 
           <div class="mb-5 pb-5">
             <button
-              onclick="window.location.href='#proyectos'"
+              onclick="window.location.href='#portfolio'"
               class="btn btn-lg btn-outline-info text-dark me-4">
-              Proyectos
+              Portfolio
             </button>
             <button
               onclick="window.location.href='#contacto'"
@@ -81,7 +82,7 @@
         </div>
       </div>
     </header>
-    <section class="conocimientos d-inline-flex flex-column">
+    <section id="conocimientos" class="d-inline-flex flex-column">
       <div class="texto">
         <i class="fa-brands fa-html5 fa-3x my-3"></i>
         <h3 class="my-3 fw-bold">HTML</h3>
@@ -127,7 +128,7 @@
         </p>
       </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio">
         <h1 class="titulo-carousel">Mis Proyectos</h1>
         <div class="linea-decorativa"></div>
       <div id="carousel" class="carousel slide carousel-fade">
@@ -139,22 +140,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="assets/imgs/itech.png" class="d-block w-100" alt="Portada pagina web iTech">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Página web iTech</h5>
               <p><a href="#" class="mas link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ver más</a></p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/imgs/iguana.png" class="d-block w-100" alt="Portada pagina web iguana">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Página web Iguana</h5>
               <p><a href="#" class="mas link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ver más</a></p>
-
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/imgs/cuppon.png" class="d-block w-100" alt="Portada pagina web cuppon">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Página web Cuppon</h5>
               <p><a href="#" class="mas link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ver más</a></p>
             </div>
@@ -170,5 +170,65 @@
         </button>
       </div>
     </section>
+    <section id="contacto">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" value="Candela" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationDefault02" value="Greco" required>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">Povincia</label>
+          <select class="form-select" id="validationDefault03" required>
+            <option selected disabled value="">Provincia...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Ciudad</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Ciudad...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <form class="was-validated">
+          <div class="mb-3">
+            <label for="validationTextarea" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="validationTextarea" placeholder="Escribeme tu mensaje aquí" required></textarea>
+          </div>
+        <div class="col-12">
+          <button class="btn btn-light" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+    <footer class="mi-footer">
+      <div class="container">
+        <div class="footer-contenido">
+          <div class="footer-logo">
+            <img src="assets/imgs/CG.png" alt="Logo de mi nombre">
+          </div>
+          <div class="footer-enlaces">
+            <ul>
+              <li><a href="#Hero-Section">Inicio</a></li>
+              <li><a href="#conocimientos">Conocimientos</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-redes">
+            <a href="#" class="red-social"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="red-social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="red-social"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-derechos">
+          <p>&copy; 2024 Candela Greco. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    
   </body>
 </html>
