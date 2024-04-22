@@ -46,7 +46,6 @@ nav {
   }
   .texto {
     padding: 1rem;
-    width: 45%;
     text-align: center;
   }
   @media only screen and (min-width: 768px) {
@@ -57,8 +56,26 @@ nav {
 
   /* PORTFOLIO */
 
+  .portfolio {
+    background-color: #000000;
+    color: white;
+  }
   .titulo-carousel {
     text-align: center;
+    padding-top: 3rem;
+    opacity: 60%;
+  }
+  .linea-decorativa {
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    margin: 30px 120px 60px;
+    opacity: 60%;
+  }
+  @media only screen and (min-width: 768px) {
+    .linea-decorativa {
+      margin: 30px 660px 60px;
+    }
   }
   .carousel-item img {
     height: 500px;
