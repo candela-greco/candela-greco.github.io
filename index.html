@@ -20,7 +20,6 @@
   </head>
   <body>
     <nav class="navbar border-bottom border-body" data-bs-theme="dark">
-      <div class="navegador">
         <div class="foto-nav">
           <a class="navbar-brand" href="#"><img src="assets/imgs/CG-B.png"
               alt="Mi iniciales CG" /></a>
@@ -36,13 +35,12 @@
               Menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#conocimientos">Conocimiento</a></li>
+              <li><a class="dropdown-item" href="#skills">Skills</a></li>
               <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
               <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
             </ul>
           </li>
         </ul>
-      </div>
     </nav>
     <header id="Hero-Section" class="text-light text-end py-1">
       <div class="container">
@@ -53,8 +51,12 @@
               src="assets/imgs/candela.jpg"
               alt="Una foto mia" />
           </div>
-          <div class="contenedor">
-            <p class="my-5 fs-4">
+        </div>
+      </div>
+    </header>
+    <section class="acerca-de-mi">
+        <h1>Acerca de mi</h1>
+            <p class="sobre-mi">
               Mi nombre es Candela, tengo 26 años y desde muy joven siento mucha
               curiosidad por la tecnología. Siempre fui de las personas que al
               tener un problema relacionado a lo tecnológico, buscaba respuestas
@@ -65,24 +67,9 @@
               de IT donde pueda seguir creciendo y contribuyendo de manera
               significativa.
             </p>
-          </div>
-
-          <div class="mb-5 pb-5">
-            <button
-              onclick="window.location.href='#portfolio'"
-              class="btn btn-lg btn-outline-info text-dark me-4">
-              Portfolio
-            </button>
-            <button
-              onclick="window.location.href='#contacto'"
-              class="btn btn-lg btn-outline-info text-dark me-4">
-              Contacto
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section id="conocimientos" class="d-inline-flex flex-column">
+    </section>
+    <div class="separator"><div></div></div>
+    <section id="skills" class="d-inline-flex flex-column">
       <div class="texto">
         <i class="fa-brands fa-html5 fa-3x my-3"></i>
         <h3 class="my-3 fw-bold">HTML</h3>
@@ -128,9 +115,9 @@
         </p>
       </div>
     </section>
+    <div class="separator"><div></div></div>
     <section id="portfolio">
         <h1 class="titulo-carousel">Mis Proyectos</h1>
-        <div class="linea-decorativa"></div>
       <div id="carousel" class="carousel slide carousel-fade">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -174,11 +161,11 @@
       <form class="row g-3">
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="validationDefault01" value="Candela" required>
+          <input type="text" class="form-control" id="validationDefault01" value="Nombre" required>
         </div>
         <div class="col-md-4">
           <label for="validationDefault02" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="validationDefault02" value="Greco" required>
+          <input type="text" class="form-control" id="validationDefault02" value="Apellido" required>
         </div>
         <div class="col-md-6">
           <label for="validationDefault03" class="form-label">Povincia</label>
@@ -208,12 +195,12 @@
       <div class="container">
         <div class="footer-contenido">
           <div class="footer-logo">
-            <img src="assets/imgs/CG.png" alt="Logo de mi nombre">
+            <img src="assets/imgs/CG-B.png" alt="Logo de mi nombre">
           </div>
           <div class="footer-enlaces">
             <ul>
               <li><a href="#Hero-Section">Inicio</a></li>
-              <li><a href="#conocimientos">Conocimientos</a></li>
+              <li><a href="#conocimientos">Skills</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
