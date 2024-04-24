@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,28 +26,30 @@
   </head>
   <body>
     <nav class="navbar border-bottom border-body" data-bs-theme="dark">
-        <div class="foto-nav">
-          <a class="navbar-brand" href="#Hero-Section"><img src="assets/imgs/CG-B.png"
-              alt="Mi iniciales CG" /></a>
-        </div>
-        <ul class="lista">
-          <li class="lista nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Menu
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#acerca-de-mi">Acerca de mi</a></li>
-              <li><a class="dropdown-item" href="#skills">Skills</a></li>
-              <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
-              <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
-            </ul>
-          </li>
-        </ul>
+      <div class="foto-nav">
+        <a class="navbar-brand" href="#Hero-Section"><img
+            src="assets/imgs/CG-B.png"
+            alt="Mi iniciales CG" /></a>
+      </div>
+      <ul class="lista">
+        <li class="lista nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#acerca-de-mi">Acerca de
+                mi</a></li>
+            <li><a class="dropdown-item" href="#skills">Skills</a></li>
+            <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
     <header id="Hero-Section" class="text-light text-end py-1">
       <div class="container">
@@ -57,27 +64,27 @@
       </div>
     </header>
     <section id="acerca-de-mi">
-        <h1>Acerca de mi</h1>
-            <div class="sobre-mi">
-              <p>
-                Mi nombre es Candela, tengo 26 años y desde muy joven siento mucha
-                curiosidad por la tecnología. Siempre fui de las personas que al
-                tener un problema relacionado a lo tecnológico, buscaba respuestas
-                hasta solucionarlo. Pero no fue hasta conocer desarrolladores que
-                me di cuenta lo mucho que me apasionaba. Fue entonces cuando
-                decidí que era algo que quería convertir en mi carrera a tiempo
-                completo. Ahora estoy enfocada en encontrar un puesto en el área
-                de IT donde pueda seguir creciendo y contribuyendo de manera
-                significativa.
-              </p>
-            </div>
+      <h1>Acerca de mi</h1>
+      <div class="sobre-mi">
+        <p>
+          Mi nombre es Candela, tengo 26 años y desde muy joven siento mucha
+          curiosidad por la tecnología. Siempre fui de las personas que al
+          tener un problema relacionado a lo tecnológico, buscaba respuestas
+          hasta solucionarlo. Pero no fue hasta conocer desarrolladores que
+          me di cuenta lo mucho que me apasionaba. Fue entonces cuando
+          decidí que era algo que quería convertir en mi carrera a tiempo
+          completo. Ahora estoy enfocada en encontrar un puesto en el área
+          de IT donde pueda seguir creciendo y contribuyendo de manera
+          significativa.
+        </p>
+      </div>
     </section>
     <div class="separator"><div></div></div>
     <section id="skills" class="d-inline-flex flex-column">
       <div class="texto">
         <i class="fa-brands fa-html5 fa-3x my-3"></i>
         <h3 class="my-3 fw-bold">HTML</h3>
-        <p class="my-3">
+        <p class="my-3 container">
           Tengo un sólido dominio del lenguaje HTML para la creación de
           estructuras de páginas web. Puedo crear documentos HTML
           semánticamente correctos utilizando etiquetas apropiadas y
@@ -91,7 +98,7 @@
       <div class="texto">
         <i class="fa-regular fa-file-code fa-3x my-3"></i>
         <h3 class="my-3 fw-bold">Css</h3>
-        <p class="my-3">
+        <p class="my-3 container">
           Tengo experiencia sólida en el uso de CSS para el diseño y la
           estilización de páginas web. Manejo selectores, propiedades y
           valores, y puedo crear diseños responsivos y atractivos utilizando
@@ -106,7 +113,7 @@
       <div class="texto">
         <i class="fa-solid fa-c fa-3x my-3"></i>
         <h3 class="my-3 fw-bold">C++</h3>
-        <p class="my-3">
+        <p class="my-3 container">
           Tengo un amplio dominio del lenguaje de programación C++. Estoy
           familiarizado con los conceptos fundamentales como variables,
           estructuras de control, funciones y punteros. Además, tengo
@@ -121,28 +128,31 @@
     </section>
     <div class="separator"><div></div></div>
     <section id="portfolio">
-        <h1>Mis Proyectos</h1>
-        <div class="proyecto d-flex">
-          <img src="assets/imgs/itech.png" alt="Portada pagina web iTech">
-          <div class="descripcion">
-            <h1>iTech</h1>
-            <a href="itech.html" target="_blank" ><button class="button">Ver más</button></a>
-          </div>
+      <h1>Mis Proyectos</h1>
+      <div class="proyecto d-flex">
+        <img src="assets/imgs/itech.png" alt="Portada pagina web iTech">
+        <div class="descripcion">
+          <h1>iTech</h1>
+          <a href="itech.html" target="_blank"><button class="button">Ver
+              más</button></a>
         </div>
-        <div class="proyecto d-flex">
-          <div class="descripcion">
-            <h1>Iguana</h1>
-            <a href="iguana.html" target="_blank" ><button class="button">Ver más</button></a>
-          </div>
-          <img src="assets/imgs/iguana.png" alt="Portada pagina web iTech">
+      </div>
+      <div class="proyecto d-flex">
+        <div class="descripcion">
+          <h1>Iguana</h1>
+          <a href="iguana.html" target="_blank"><button class="button">Ver
+              más</button></a>
         </div>
-        <div class="proyecto d-flex">
-          <img src="assets/imgs/cuppon.png" alt="Portada pagina web iTech">
-          <div class="descripcion">
-            <h1>Cuppon</h1>
-            <a href="cuppon.html" target="_blank" ><button class="button">Ver más</button></a>
-          </div>
+        <img src="assets/imgs/iguana.png" alt="Portada pagina web iTech">
+      </div>
+      <div class="proyecto d-flex">
+        <img src="assets/imgs/cuppon.png" alt="Portada pagina web iTech">
+        <div class="descripcion">
+          <h1>Cuppon</h1>
+          <a href="cuppon.html" target="_blank"><button class="button">Ver
+              más</button></a>
         </div>
+      </div>
     </section>
     <div class="separator"><div></div></div>
     <section id="contacto">
@@ -150,23 +160,28 @@
       <form class="row g-3">
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" required>
+          <input type="text" class="form-control" id="validationDefault01"
+            placeholder="Nombre" required>
         </div>
         <div class="col-md-4">
           <label for="validationDefault02" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido" required>
+          <input type="text" class="form-control" id="validationDefault02"
+            placeholder="Apellido" required>
         </div>
         <div class="col-md-6">
           <label for="validationDefault03" class="form-label">Telefono</label>
-          <input type="text" class="form-control" id="validationDefault03" placeholder="Telefono" required>
+          <input type="text" class="form-control" id="validationDefault03"
+            placeholder="Telefono" required>
         </div>
         <div class="col-md-6">
           <label for="validationDefault04" class="form-label">Email</label>
-          <input type="email" class="form-control" id="validationDefault04" placeholder="Email" required>
+          <input type="email" class="form-control" id="validationDefault04"
+            placeholder="Email" required>
         </div>
         <div class="col-12">
           <label for="validationTextarea" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="validationTextarea" placeholder="Escribime tu mensaje acá!! :)" required></textarea>
+          <textarea class="form-control" id="validationTextarea"
+            placeholder="Escribime tu mensaje acá!! :)" required></textarea>
         </div>
         <div class="col-12 boton">
           <button class="button" type="submit">Enviar</button>
@@ -177,7 +192,8 @@
       <div class="container">
         <div class="footer-contenido">
           <div class="footer-logo">
-            <img href="Hero-Section" src="assets/imgs/CG-B.png" alt="Logo de mi nombre">
+            <img href="Hero-Section" src="assets/imgs/CG-B.png"
+              alt="Logo de mi nombre">
           </div>
           <div class="footer-redes">
             <a href="#" class="red-social"><i class="fab fa-facebook"></i></a>
@@ -191,6 +207,6 @@
         </div>
       </div>
     </footer>
-    
+
   </body>
 </html>
