@@ -115,6 +115,9 @@ section {
   color: #000;
   text-shadow: 2px 2px 5px #681757;
 }
+#portfolio h1 {
+  text-align: center;
+}
 .descripcion {
   padding: 30px;
 }
