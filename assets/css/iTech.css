@@ -20,6 +20,11 @@ section:hover img {
     transform: scale(2.25);
     overflow: hidden;
 }
+@media screen and (min-width: 768px){
+    section:hover img {
+        transform: none;
+    }
+}
 .mi-footer {
     padding-top: 250px;
 }
