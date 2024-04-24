@@ -12,6 +12,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/index-styles.css" />
     <title>Mi curriculum</title>
     <link rel="icon" type="image/png" href="assets/imgs/favicon-32x32.png">
@@ -21,7 +22,7 @@
   <body>
     <nav class="navbar border-bottom border-body" data-bs-theme="dark">
         <div class="foto-nav">
-          <a class="navbar-brand" href="#"><img src="assets/imgs/CG-B.png"
+          <a class="navbar-brand" href="#Hero-Section"><img src="assets/imgs/CG-B.png"
               alt="Mi iniciales CG" /></a>
         </div>
         <ul class="lista">
@@ -35,6 +36,7 @@
               Menu
             </a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#acerca-de-mi">Acerca de mi</a></li>
               <li><a class="dropdown-item" href="#skills">Skills</a></li>
               <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
               <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
@@ -54,19 +56,21 @@
         </div>
       </div>
     </header>
-    <section class="acerca-de-mi">
+    <section id="acerca-de-mi">
         <h1>Acerca de mi</h1>
-            <p class="sobre-mi">
-              Mi nombre es Candela, tengo 26 años y desde muy joven siento mucha
-              curiosidad por la tecnología. Siempre fui de las personas que al
-              tener un problema relacionado a lo tecnológico, buscaba respuestas
-              hasta solucionarlo. Pero no fue hasta conocer desarrolladores que
-              me di cuenta lo mucho que me apasionaba. Fue entonces cuando
-              decidí que era algo que quería convertir en mi carrera a tiempo
-              completo. Ahora estoy enfocada en encontrar un puesto en el área
-              de IT donde pueda seguir creciendo y contribuyendo de manera
-              significativa.
-            </p>
+            <div class="sobre-mi">
+              <p>
+                Mi nombre es Candela, tengo 26 años y desde muy joven siento mucha
+                curiosidad por la tecnología. Siempre fui de las personas que al
+                tener un problema relacionado a lo tecnológico, buscaba respuestas
+                hasta solucionarlo. Pero no fue hasta conocer desarrolladores que
+                me di cuenta lo mucho que me apasionaba. Fue entonces cuando
+                decidí que era algo que quería convertir en mi carrera a tiempo
+                completo. Ahora estoy enfocada en encontrar un puesto en el área
+                de IT donde pueda seguir creciendo y contribuyendo de manera
+                significativa.
+              </p>
+            </div>
     </section>
     <div class="separator"><div></div></div>
     <section id="skills" class="d-inline-flex flex-column">
@@ -117,77 +121,55 @@
     </section>
     <div class="separator"><div></div></div>
     <section id="portfolio">
-        <h1 class="titulo-carousel">Mis Proyectos</h1>
-      <div id="carousel" class="carousel slide carousel-fade">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/imgs/itech.png" class="d-block w-100" alt="Portada pagina web iTech">
-            <div class="carousel-caption">
-              <h5>Página web iTech</h5>
-              <p><a href="#" class="mas link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ver más</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/imgs/iguana.png" class="d-block w-100" alt="Portada pagina web iguana">
-            <div class="carousel-caption">
-              <h5>Página web Iguana</h5>
-              <p><a href="#" class="mas link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ver más</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/imgs/cuppon.png" class="d-block w-100" alt="Portada pagina web cuppon">
-            <div class="carousel-caption">
-              <h5>Página web Cuppon</h5>
-              <p><a href="#" class="mas link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ver más</a></p>
-            </div>
+        <h1>Mis Proyectos</h1>
+        <div class="proyecto d-flex">
+          <img src="assets/imgs/itech.png" alt="Portada pagina web iTech">
+          <div class="descripcion">
+            <h1>iTech</h1>
+            <button class="button">Ver más</button>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+        <div class="proyecto d-flex">
+          <div class="descripcion">
+            <h1>Iguana</h1>
+            <button class="button">Ver más</button>
+          </div>
+          <img src="assets/imgs/iguana.png" alt="Portada pagina web iTech">
+        </div>
+        <div class="proyecto d-flex">
+          <img src="assets/imgs/cuppon.png" alt="Portada pagina web iTech">
+          <div class="descripcion">
+            <h1>Cuppon</h1>
+            <button class="button">Ver más</button>
+          </div>
+        </div>
     </section>
+    <div class="separator"><div></div></div>
     <section id="contacto">
+      <h1>Dejame tu mensaje si queres que trabajemos juntos...</h1>
       <form class="row g-3">
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="validationDefault01" value="Nombre" required>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" required>
         </div>
         <div class="col-md-4">
           <label for="validationDefault02" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="validationDefault02" value="Apellido" required>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido" required>
         </div>
-        <div class="col-md-6">
-          <label for="validationDefault03" class="form-label">Povincia</label>
-          <select class="form-select" id="validationDefault03" required>
-            <option selected disabled value="">Provincia...</option>
-            <option>...</option>
-          </select>
+        <div class="col-md-4">
+          <label for="validationDefault03" class="form-label">Telefono</label>
+          <input type="text" class="form-control" id="validationDefault03" placeholder="Telefono" required>
         </div>
-        <div class="col-md-3">
-          <label for="validationDefault04" class="form-label">Ciudad</label>
-          <select class="form-select" id="validationDefault04" required>
-            <option selected disabled value="">Ciudad...</option>
-            <option>...</option>
-          </select>
+        <div class="col-md-4">
+          <label for="validationDefault04" class="form-label">Email</label>
+          <input type="email" class="form-control" id="validationDefault04" placeholder="Email" required>
         </div>
-        <form class="was-validated">
-          <div class="mb-3">
-            <label for="validationTextarea" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="validationTextarea" placeholder="Escribeme tu mensaje aquí" required></textarea>
-          </div>
         <div class="col-12">
-          <button class="btn btn-light" type="submit">Enviar</button>
+          <label for="validationTextarea" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="validationTextarea" placeholder="Escribime tu mensaje acá!! :)" required></textarea>
+        </div>
+        <div class="col-12 boton">
+          <button class="button" type="submit">Enviar</button>
         </div>
       </form>
     </section>
@@ -195,24 +177,17 @@
       <div class="container">
         <div class="footer-contenido">
           <div class="footer-logo">
-            <img src="assets/imgs/CG-B.png" alt="Logo de mi nombre">
-          </div>
-          <div class="footer-enlaces">
-            <ul>
-              <li><a href="#Hero-Section">Inicio</a></li>
-              <li><a href="#conocimientos">Skills</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            <img href="Hero-Section" src="assets/imgs/CG-B.png" alt="Logo de mi nombre">
           </div>
           <div class="footer-redes">
-            <a href="#" class="red-social"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="red-social"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="red-social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="red-social"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="red-social"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="red-social"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <div class="footer-derechos">
-          <p>&copy; 2024 Candela Greco. Todos los derechos reservados.</p>
+          <p>&copy; 2024 Candela Greco.</p>
+          <p>Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

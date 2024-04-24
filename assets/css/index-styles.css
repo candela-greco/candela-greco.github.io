@@ -8,10 +8,10 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background: #681757;
-  background: -webkit-linear-gradient(to right, #f3c9cb, #ffd700, #FB9898);
-  background: linear-gradient(to right, #F3C9CB,#ffd700, #FB9898);
+  background: -webkit-linear-gradient(right, #f7acac, #f3c9cb, #ffdf2b);
+  background: linear-gradient(to right, #f7acac, #f3c9cb, #ffdf2b);
   color: #fff;
 }
 
@@ -35,155 +35,149 @@ section {
 }
 /* NAVEGADOR */
 .navbar {
-  display: flex; 
+  display: flex;
   justify-content: center;
-   height: 90px;
+  height: 90px;
   align-items: center;
-  background: linear-gradient(to right, #F3C9CB,#ffd700, #FB9898);
+  background: linear-gradient(to right, #f7acac, #f3c9cb, #ffdf2b);
   position: sticky;
   top: 0;
   z-index: 999;
   width: 100%;
-   }
- 
-   .lista {
-    list-style: none;
-    color: black;
-    font-size: 20px;
-    top: 5px;
-  }
-  
-  /* HEADER */
-  
-  #Hero-Section {
-    background-image: url("../imgs/fondo-cabecera.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    display: block;
-  }
-  .foto-perfil{
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-  }
-
-  .acerca-de-mi {
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    h1 {
-      padding: 40px;
-      font-size: 50px;
-    }
-    .sobre-mi {
-      width: 500px;
-      text-align: center;
-      padding: 10px;
-    }
-  }
-  
-  /* CONOCIMIENTOS */
-  
-  #skills {
-    opacity: 70%;
-    color: black;
-    align-items: center;
-  }
-  .texto {
-    padding: 1rem;
-    text-align: center;
-  }
-  @media only screen and (min-width: 768px) {
-    .texto {
-      width: 50%;
-    }
-  }
-
-  /* PORTFOLIO */
-
-  #portfolio {
-    color: #000;
-  }
-  .titulo-carousel {
-    text-align: center;
-    padding: 40px;
-  }
-  .carousel-item img {
-    height: 500px;
-    object-fit: cover ;
-    object-position: top;
 }
-  .carousel-caption {
-    background-color: black;
-    opacity: 60%;
-  }
-  
-  /* CONTACTO */
 
-  #contacto {
-    color: #000;
-    padding: 3rem;
-  }
-  
-  /* FOOTER */
+.lista {
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  top: 5px;
+}
 
-  .mi-footer {
-    color: #000;
-    padding: 30px 0;
+/* HEADER */
+
+#Hero-Section {
+  background-image: url("../imgs/fondo-cabecera.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  display: block;
+}
+.foto-perfil {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+/* ACERCA DE MI */
+#acerca-de-mi {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin: -40px;
+  padding: 40px;
+}
+#acerca-de-mi h1 {
+  text-shadow: 2px 2px 5px #681757;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+.sobre-mi {
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+}
+
+@media only screen and (min-width: 1200px) {
+  #acerca-de-mi h1 {
+    font-size: 50px;
   }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-contenido {
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer-logo img {
-    width: 100px;
-    height: auto;
-    padding: 2rem;
-  }
-  
-  .footer-enlaces ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer-enlaces ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .footer-enlaces ul li a {
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .footer-redes a {
-    color: #000;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  .footer-redes a:hover {
-    color: #D18398;
-  }
-  
-  .footer-derechos {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
+}
+
+/* SKILLS */
+
+#skills {
+  opacity: 70%;
+  color: black;
+  align-items: center;
+}
+.texto {
+  padding: 1rem;
+  text-align: center;
+  width: 150%;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  color: #000;
+  text-shadow: 2px 2px 5px #681757;
+}
+.descripcion {
+  padding: 30px;
+}
+.proyecto img {
+  width: 150px;
+  height: auto;
+  border-radius: 20%;
+}
+.proyecto {
+  justify-content: space-around;
+  padding: 20px;
+}
+.descripcion h1 {
+  padding-bottom: 25px;
+}
+.button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  width: 100px;
+  padding: 3px;
+  box-shadow: 0 8px 16px 0 #681757, 0 6px 20px 0 #681757;
+}
+.button:hover {
+  box-shadow: 0 20px 20px 0 #681757, 0 50px 50px 0 #681757;
+}
+
+/* CONTACTO */
+#contacto {
+  color: #000;
+  padding: 3rem;
+  width: 100%;
+  margin: 0px;
+}
+
+#contacto h1 {
+  padding-bottom: 40px;
+  text-shadow: 2px 2px 5px #681757;
+}
+#contacto .boton {
+  padding-top: 30px;
+}
+
+/* FOOTER */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+  color: #000;
+}
+.footer-derechos {
+  padding-top: 20px;
+}
+.footer-logo img {
+  width: 70px;
+}
+.footer-redes a {
+  color: #000;
+  font-size: 30px;
+  padding: 15px;
+}
+.red-social:hover {
+  text-shadow: 2px 2px 5px #681757;
+}
